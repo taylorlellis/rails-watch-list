@@ -1,0 +1,20 @@
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://marketing.dcassetcdn.com/blog/2018/March/50-Typographic-Oscars-Film-Posters/GR_Typographic-Oscar-Film-Posters_Banner_828x300.jpg)">
+  Movie lists
+</div>
+
+
+  </div>
+<div class="container mt-3">
+      <% @lists.each do |list| %>
+      <div class="card">
+   <%= link_to list.name, list_path(list.id) %>
+     </div>
+    <% end %>
+</div>
+
+
+<div class="container mt-3">
+ <%= link_to new_list_path, class: 'text-dark text-decoration-none' do %>
+      <p> add list </p> <i class= "fa-solid fa-plus"></i>
+    <% end %>
+</div>

@@ -1,0 +1,15 @@
+.card {
+  background-color:#7C898B;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 10px;
+  border: 20px;
+  margin: 10px;
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  display: flex;
+  align-items: center;
+  position:relative;
+}
