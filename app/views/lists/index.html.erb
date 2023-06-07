@@ -1,20 +1,65 @@
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://marketing.dcassetcdn.com/blog/2018/March/50-Typographic-Oscars-Film-Posters/GR_Typographic-Oscar-Film-Posters_Banner_828x300.jpg)">
-  Movie lists
-</div>
 
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.neondystopia.com/wp-content/uploads/2017/10/blade3.jpg)">
+  <div class="container">
+    <%= link_to 'Add a new list ', new_list_path, class: "btn-flat" %>
+    <a class="sign" href="/lists">
+      <span class="fast-flicker">Mo</span>vie <span class="flicker">Watch</span>list
 
+    </a>
   </div>
-<div class="container mt-3">
-      <% @lists.each do |list| %>
-      <div class="card">
-   <%= link_to list.name, list_path(list.id) %>
-     </div>
-    <% end %>
 </div>
 
 
-<div class="container mt-3">
- <%= link_to new_list_path, class: 'text-dark text-decoration-none' do %>
-      <p> add list </p> <i class= "fa-solid fa-plus"></i>
-    <% end %>
-</div>
+<fieldset class="slideshow">
+
+  <!-- Slide 1 -->
+  <label class="slide-button" for="slideCheckbox1">Romance</label>
+  <input type="radio" id="slideCheckbox1" name="slide" checked></input>
+  <div class="slide">
+    <div class="slide__content">
+      </span>
+      <h2>ロマンス</h2>
+     <a class="btn-flat" href="/lists/1" >Romance</a>
+
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <label class="slide-button" for="slideCheckbox2">Action</label>
+  <input type="radio" id="slideCheckbox2" name="slide"></input>
+  <div class="slide">
+    <div class="slide__content">
+      <h2>アクション</h2>
+     <a class="btn-flat" href="#" >Action</a>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <label class="slide-button" for="slideCheckbox3">Comedy</label>
+  <input type="radio" id="slideCheckbox3" name="slide"></input>
+  <div class="slide">
+    <div class="slide__content">
+      <h2>コメディ</h2>
+     <a class="btn-flat" href="#" >Comedy</a>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <label class="slide-button" for="slideCheckbox4">Animation</label>
+  <input type="radio" id="slideCheckbox4" name="slide"></input>
+  <div class="slide">
+    <div class="slide__content">
+      <h2>アニメーション</h2>
+     <a class="btn-flat" href="#" >Animation</a>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+  <label class="slide-button" for="slideCheckbox5">Sci fi</label>
+  <input type="radio" id="slideCheckbox5" name="slide"></input>
+  <div class="slide">
+    <div class="slide__content">
+      <h2>サイエンスフィクション</h2>
+     <a class="btn-flat" href="#" >sci fi</a>
+    </div>
+  </div>

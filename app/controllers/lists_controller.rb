@@ -25,6 +25,6 @@ class ListsController < ApplicationController
 
   # strong params -> white listing the info coming from the form
   def list_params
-    params.require(:list).permit(:name)
+    params.require(:list).permit(:name, :photo)
   end
 end

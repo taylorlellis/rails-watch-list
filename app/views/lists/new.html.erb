@@ -1,4 +1,13 @@
-<div class="container">
-  <h1>Add a Category</h1>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.neondystopia.com/wp-content/uploads/2017/10/blade3.jpg)">
+  <div class="container">
+    <%= link_to 'Add a new list ', new_list_path, class: "btn-flat" %>
+    <a class="sign" href="/lists">
+      <span class="fast-flicker">Mo</span>vie <span class="flicker">Watch</span>list
+
+    </a>
+  </div>
+</div>
+</div>
   <%= render 'lists/form' %>
 </div>
