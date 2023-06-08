@@ -1,0 +1,9 @@
+.card-show {
+  position: relative;
+
+}
+
+.cards-show {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
